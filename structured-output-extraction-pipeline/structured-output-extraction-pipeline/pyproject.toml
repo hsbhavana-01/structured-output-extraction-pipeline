@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "structured-output-extraction-pipeline"
+version = "1.0.0"
+description = "Schema-constrained document extraction with validation, retries, review routing, and evaluation."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["pydantic>=2.6,<3"]
+
+[project.optional-dependencies]
+openai = ["openai>=1.40"]
+test = ["pytest>=8"]
+
+[project.scripts]
+extract-documents = "extraction_pipeline.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

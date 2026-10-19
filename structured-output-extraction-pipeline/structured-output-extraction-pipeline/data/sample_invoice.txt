@@ -1,0 +1,7 @@
+INVOICE
+Vendor: Northwind Office Supplies
+Invoice Number: NW-2026-1042
+Invoice Date: 2026-09-12
+Currency: USD
+Subtotal: 120.00
+Grand Total: USD 120.00
